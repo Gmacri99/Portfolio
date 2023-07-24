@@ -2,12 +2,12 @@
     --dark: #262627;
     --light: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,244,245,1) 50%, rgba(237,245,247,1) 100%);
     --white: #f2fff2;
-    --focus:#292323;
+    --focus:#eb0b0b;
   }
 
   @font-face {
     font-family: Roboto;
-    src: url('Fonts/Roboto-Medium.ttf');
+    src: url('Fonts/Roboto-Light.ttf');
   }
 
   @font-face {
@@ -16,13 +16,29 @@
   }
 
   @font-face {
-    font-family: Oswald;
-    src: url('Fonts/Oswald-Regular.ttf');
+    font-family: Roboto-Medium;
+    src: url('Fonts/Roboto-Regular.ttf');
   }
 
-p,li{
+p{
     font-family: Roboto;
+    font-size: clamp(1rem, 1.4vw, 1.5rem); ;
+    padding-top: 1em;
+    line-height: 1.7em;
+}
+
+li{
+    font-family: Roboto-Medium;
     list-style: none;
+}
+
+.nav-li{
+    font-size: clamp(1rem, 1.7vw, 1.9rem); ;
+}
+
+h1{
+    font-size: clamp(2rem, 4.4vw, 5.7rem); ;
+
 }
 
 a{
@@ -34,6 +50,8 @@ a{
 
 h1,h2,h3,h4,h5,h6{
     font-family: Montserrat;
+    color: var(--dark);
+    letter-spacing: 0.06em;
 }
 
 *{
@@ -41,6 +59,9 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
     margin: 0;
 }
+@media (min-width: 1024px) and (orientation: landscape)  {
+    
+
 
 body{
     background:var(--light);
@@ -56,36 +77,50 @@ body{
     width: 100%;
 }
 
-.nav-li{
-    font-size: clamp(1rem, 2.5vw, 1.5rem); ;
-    padding:0.6em;
-}
-
 
 a:hover{
-background: var(--dark);
-color: var(--white);
-border-radius: 50%;
-
+color: var(--focus);
 cursor: pointer;
-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease;
 }
 
 header div{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 4rem ;
 }
 
 header{
-
+    position: sticky;
     display: grid;
-    grid-template-columns: 50% 1fr;
-    height: 5rem;
+    grid-template-columns: 50% 2fr;
+    height: 5vh;
+
 }
 
+.about-container{
+    height: 95vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 55% 2fr;
+}
 
+.about-container div{
+    display: inline-block;
+}
+.p-writting{
+    animation: write   13s alternate;
+    white-space: pre-wrap;
+    flex-wrap: wrap;
+    display: flex;
+
+    width: 100%;
+    }
+
+    @keyframes write {
+        from { width: 0; white-space: nowrap;overflow: hidden;}
+    }
+}
 
 
 
