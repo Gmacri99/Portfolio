@@ -5,30 +5,21 @@
     --focus:#eb0b0b;
   }
 
-  @font-face {
-    font-family: Roboto;
-    src: url('Fonts/Roboto-Light.ttf');
-  }
 
-  @font-face {
-    font-family: Montserrat;
-    src: url('Fonts/Montserrat-Medium.ttf');
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap');
 
-  @font-face {
-    font-family: Roboto-Medium;
-    src: url('Fonts/Roboto-Regular.ttf');
-  }
 
+  
 p{
-    font-family: Roboto;
-    font-size: clamp(1rem, 1.4vw, 1.5rem); ;
+    font-family: 'Roboto';
+    font-size: clamp(1rem, 1.3vw, 1.4rem); ;
     padding-top: 1em;
-    line-height: 1.7em;
+    line-height: 1.8em;
 }
 
 li{
-    font-family: Roboto-Medium;
+    font-family: 'Roboto';
+    font-style: weight;
     list-style: none;
 }
 
@@ -37,9 +28,11 @@ li{
 }
 
 h1{
-    font-size: clamp(2rem, 4.4vw, 5.7rem); ;
+    font-size: clamp(2rem, 4.8vw, 5.8rem); ;
 
 }
+
+
 
 a{
     color: var(--dark);
@@ -48,8 +41,23 @@ a{
     transition: color 0.5s ease;
 }
 
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    background:var(--light);
+    color: var(--dark);
+}
+
 h1,h2,h3,h4,h5,h6{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: var(--dark);
     letter-spacing: 0.06em;
 }
@@ -59,24 +67,103 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
     margin: 0;
 }
-@media (min-width: 1024px) and (orientation: landscape)  {
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
+
+@media (max-width:768px){
+    body{
+        margin: 0rem 2.5rem;
+    }
+
+    .flex-container:first-child{
+        display: none;
+    }
+
+    .about-container{
+        height: 94vh;
+display: flex;
+flex-wrap: wrap-reverse;
+align-items: center;
+justify-content: start;
+    }
     
 
+    header div{
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    header nav:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    header{
+        position: sticky;
+        display: grid;
+        grid-template-columns: 35% 2fr;
+        height: 6vh;
+
+    }
+
+    .Logo{
+        height: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
 
 body{
-    background:var(--light);
-    color: var(--dark);
+    margin: 0rem 3rem;
+}
+
+.Logo{
+    height: 4rem;
+}
+
+.menu{
+    display: none;
+}
+
+
+header div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    display: grid;
+    grid-template-columns: 35% 2fr;
+    height: 6vh;
+}
+
+
+}
+
+@media (min-width: 1024px)  {
+    
+
+.Logo{
+        height: 7rem;
+}
+
+body{
     margin: 0rem 7rem;
 }
-
-.flex-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-}
-
 
 a:hover{
 color: var(--focus);
@@ -94,33 +181,24 @@ header{
     position: sticky;
     display: grid;
     grid-template-columns: 50% 2fr;
-    height: 5vh;
-
+    height: 9vh;
 }
 
 .about-container{
-    height: 95vh;
+    height: 91vh;
     display: grid;
     align-items: center;
-    grid-template-columns: 55% 2fr;
+    grid-template-columns: 45vw 2fr;
 }
 
 .about-container div{
     display: inline-block;
 }
+
 .p-writting{
-    animation: write   13s alternate;
-    white-space: pre-wrap;
-    flex-wrap: wrap;
-    display: flex;
-
-    width: 100%;
-    }
-
-    @keyframes write {
-        from { width: 0; white-space: nowrap;overflow: hidden;}
-    }
+    min-height: 8rem;
 }
 
+}
 
 

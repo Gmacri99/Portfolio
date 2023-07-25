@@ -32,16 +32,31 @@ tl.from('.li-contact',{
 })
 
 tl.from('.about-container',{
-    y:1000,
-    duration: 1.5
-})
-
-
-
-tl.from('.p-writting',{
+    y:-100,
     opacity:0,
-    position:relative,
-    width:100,
-    duration: 7
+    duration: 1.2
 })
 
+let write=document.querySelector('.p-writting')
+
+let writting= str =>{
+    let arrFromStr=str.split('')
+    let i=0
+    let printStr=setInterval(()=>{
+        write.innerHTML+=arrFromStr[i];
+        i++;
+
+        if(i===arrFromStr.length){
+            clearInterval(printStr)
+        }
+    },50)
+}
+
+tl.call(setTimeout(()=>{writting('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')},7000))
+
+
+tl.from('.about-container-div-2',{
+    opacity:0,
+    x:50,
+    duration: 1
+})

@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Gianny Macri</title>
 </head>
 <body>
     <header>
         <div class="logo-header"> 
-            <p>LOGO</p>
+            <img src="assets/Logo.png" class="Logo">
         </div>
         <nav>
-            <ul class="flex-container">
+            <ul class="flex-container flex-container-header">
                 <li><a class="nav-li li-about" href="#about">About</a></li>
                 <li><a class="nav-li li-services" >Services</a></li>
                 <li><a class="nav-li li-skills">Skills</a></li>
                 <li><a class="nav-li li-experience">Experience</a></li>
                 <li><a class="nav-li li-contact">Contact</a></li>
             </ul>
+            <div class="menu"><span class="material-symbols-outlined">menu</span></div>
         </nav>
     </header>
     <main>
@@ -28,9 +33,9 @@
         <section class="about-container" id="about">
             <div>
                 <h1 >Hi, I'm <br>a web developer</h1>
-                <p class="about-container-div1-p p-writting">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="about-container-div1-p p-writting"></p>
             </div>
-            <div class="about-container-div"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="about-container-div-2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
