@@ -52,7 +52,7 @@ let writting= str =>{
     },50)
 }
 
-tl.call(setTimeout(()=>{writting('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')},7000))
+tl.call(setTimeout(()=>{writting("Hello, I'm a front end developer with experience creating websites and interactive applications. I love designing and developing web experiences that surprise and delight users. ")},7000))
 
 
 tl.from('.about-container-div-2',{
