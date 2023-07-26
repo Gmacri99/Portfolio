@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6{
 
 @media (max-width:768px){
     body{
-        margin: 0rem 1rem;
+        margin: 0rem 0.3rem;
     }
 
     .material-icons.sizes {
@@ -125,6 +125,7 @@ justify-content: start;
     }
 
     .Logo{
+        
         height: 5rem;
     }
 }
