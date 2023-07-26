@@ -68,13 +68,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 600,
-  'GRAD' 0,
-  'opsz' 48
-}
+
 
 
 
@@ -83,6 +77,10 @@ h1,h2,h3,h4,h5,h6{
     body{
         margin: 0rem 1rem;
     }
+
+    .material-icons.sizes {
+        font-size: 3em;
+        }
 
     .flex-container:first-child{
         display: none;
@@ -93,7 +91,7 @@ h1,h2,h3,h4,h5,h6{
     }
 
     .about-container{
-        height: 84vh;
+        height: 60vh;
 display: flex;
 padding-top: 8em;
 flex-wrap: wrap-reverse;
@@ -104,6 +102,7 @@ justify-content: start;
 
     header div{
         height: 100%;
+        background-color: #eb0b0b;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -115,12 +114,13 @@ justify-content: start;
         justify-content: end;
     }
 
+
     header{
         background-color: aquamarine;
         position: sticky;
         display: grid;
-        grid-template-columns: 35% 2fr;
-        height: 8vh;
+        grid-template-columns: 65% 1fr;
+        height: 12vh;
 
     }
 
@@ -135,6 +135,9 @@ body{
     margin: 0rem 3rem;
 }
 
+.material-icons.sizes {
+    display: none;
+    }
 
 
 .Logo{
