@@ -50,9 +50,16 @@ a{
     width: 100%;
 }
 
-
+video{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
 body{
-    background:var(--light);
+    background-image:url('assets/Video-Background.mp4');
     color: var(--dark);
 }
 
@@ -74,9 +81,13 @@ h1,h2,h3,h4,h5,h6{
 
 
 @media (max-width:768px){
+
+
+
     body{
-        margin: 0rem 0.8rem;
+        margin: 0rem 1rem;
     }
+    
 
     .material-icons.sizes {
         font-size: 3em;
