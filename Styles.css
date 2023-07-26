@@ -93,7 +93,7 @@ h1,h2,h3,h4,h5,h6{
     }
 
     .about-container{
-        height: 94vh;
+        height: 92vh;
 display: flex;
 padding-top: 8em;
 flex-wrap: wrap-reverse;
@@ -119,12 +119,12 @@ justify-content: start;
         position: sticky;
         display: grid;
         grid-template-columns: 35% 2fr;
-        height: 6vh;
+        height: 8vh;
 
     }
 
     .Logo{
-        height: 4rem;
+        height: 5rem;
     }
 }
 
