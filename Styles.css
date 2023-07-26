@@ -81,7 +81,7 @@ h1,h2,h3,h4,h5,h6{
 
 @media (max-width:768px){
     body{
-        margin: 0rem 2.5rem;
+        margin: 0rem 1.3rem;
     }
 
     .flex-container:first-child{
@@ -91,7 +91,7 @@ h1,h2,h3,h4,h5,h6{
     .about-container{
         height: 94vh;
 display: flex;
-padding-top: 9em;
+padding-top: 8em;
 flex-wrap: wrap-reverse;
 align-items: start;
 justify-content: start;
@@ -120,7 +120,7 @@ justify-content: start;
     }
 
     .Logo{
-        height: 3.5rem;
+        height: 4rem;
     }
 }
 
