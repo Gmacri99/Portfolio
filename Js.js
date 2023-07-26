@@ -8,27 +8,27 @@ tl.from('.logo-header',{
 
 tl.from('.li-about',{
     opacity:0,
-    duration: 0.5
+    duration: 0.4
 })
 
 tl.from('.li-services',{
     opacity:0,
-    duration: 0.5
+    duration: 0.35
 })
 
 tl.from('.li-skills',{
     opacity:0,
-    duration: 0.5
+    duration: 0.3
 })
 
 tl.from('.li-experience',{
     opacity:0,
-    duration: 0.5
+    duration: 0.25
 })
 
 tl.from('.li-contact',{
     opacity:0,
-    duration: 0.5
+    duration: 0.2
 })
 
 tl.from('.about-container',{
@@ -52,7 +52,7 @@ let writting= str =>{
     },50)
 }
 
-tl.call(setTimeout(()=>{writting("Hello, I'm a front end developer with experience creating websites and interactive applications. I love designing and developing web experiences that surprise and delight users. ")},7000))
+tl.call(setTimeout(()=>{writting("My name is Gianny Macri, a front end developer with experience creating websites and interactive applications. I love designing and developing webs that surprise and delight users. ")},5000))
 
 
 tl.from('.about-container-div-2',{

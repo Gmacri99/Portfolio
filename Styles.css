@@ -12,7 +12,7 @@
   
 p{
     font-family: 'Roboto';
-    font-size: clamp(1rem, 1.3vw, 1.4rem); ;
+    font-size: clamp(1.1rem, 1.4vw, 1.9rem); ;
     padding-top: 1em;
     line-height: 1.8em;
 }
@@ -28,7 +28,7 @@ li{
 }
 
 h1{
-    font-size: clamp(2rem, 4.8vw, 5.8rem); ;
+    font-size: clamp(2.5rem, 4.8vw, 5.8rem); ;
 
 }
 
@@ -91,8 +91,9 @@ h1,h2,h3,h4,h5,h6{
     .about-container{
         height: 94vh;
 display: flex;
+padding-top: 9em;
 flex-wrap: wrap-reverse;
-align-items: center;
+align-items: start;
 justify-content: start;
     }
     
@@ -129,6 +130,8 @@ body{
     margin: 0rem 3rem;
 }
 
+
+
 .Logo{
     height: 4rem;
 }
@@ -143,6 +146,14 @@ header div{
     justify-content: start;
     align-items: center;
 }
+
+.about-container{
+    height: 91vh;
+    grid-template-columns: 50vw 1fr;
+    padding-top: 12em;
+    display: grid;
+}
+
 
 header{
     position: sticky;
@@ -188,6 +199,7 @@ header{
 .about-container{
     height: 91vh;
     display: grid;
+    padding-top: 0em;
     align-items: center;
     grid-template-columns: 45vw 2fr;
 }
