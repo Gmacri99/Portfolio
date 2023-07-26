@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6{
 
 @media (max-width:768px){
     body{
-        margin: 0rem 0.3rem;
+        margin: 0rem 0.8rem;
     }
 
     .material-icons.sizes {
@@ -102,7 +102,6 @@ justify-content: start;
 
     header div{
         height: 100%;
-        background-color: #eb0b0b;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -116,11 +115,10 @@ justify-content: start;
 
 
     header{
-        background-color: aquamarine;
         position: sticky;
         display: grid;
         grid-template-columns: 65% 1fr;
-        height: 12vh;
+        height: 100%;
 
     }
 
