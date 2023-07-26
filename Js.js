@@ -53,9 +53,6 @@ match.add("(min-width:768px)", ()=>{
         duration: 1.2
     })
 
-tl.call(setTimeout(()=>{writting("My name is Gianny Macri, a front end developer with experience creating websites and interactive applications. I love designing and developing webs that surprise and delight users. ")},5000))
-
-
 tl.from('.about-container-div-2',{
     opacity:0,
     x:50,
@@ -82,9 +79,6 @@ match.add("(max-width:767px)", ()=>{
         duration: 1.2
     })
 
-tl.call(setTimeout(()=>{writting("My name is Gianny Macri, a front end developer with experience creating websites and interactive applications. I love designing and developing webs that surprise and delight users. ")},4000))
-
-
 tl.from('.about-container-div-2',{
     opacity:0,
     x:50,
@@ -92,4 +86,6 @@ tl.from('.about-container-div-2',{
 })
 
 })
+
+tl.call(setTimeout(()=>{writting("My name is Gianny Macri, a front end developer with experience creating websites and interactive applications. I love designing and developing webs that surprise and delight users. ")},4000))
 
