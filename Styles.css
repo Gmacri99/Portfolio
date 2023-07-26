@@ -12,7 +12,7 @@
   
 p{
     font-family: 'Roboto';
-    font-size: clamp(1.1rem, 1.2vw, 1.7rem); ;
+    font-size: clamp(1rem, 1.1vw, 1.6rem); ;
     padding-top: 1em;
     line-height: 1.8em;
 }
@@ -28,7 +28,7 @@ li{
 }
 
 h1{
-    font-size: clamp(2.2rem, 4.2vw, 5.2rem); ;
+    font-size: clamp(2.0rem, 5vw, 5.2rem); ;
 
 }
 
@@ -81,7 +81,7 @@ h1,h2,h3,h4,h5,h6{
 
 @media (max-width:768px){
     body{
-        margin: 0rem 1.3rem;
+        margin: 0rem 1rem;
     }
 
     .flex-container:first-child{
