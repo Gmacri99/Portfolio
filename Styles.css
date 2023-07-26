@@ -6,12 +6,10 @@
   }
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap');
-
-
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&family=Roboto:ital,wght@0,400;1,300&display=swap');
   
 p{
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: clamp(1rem, 1.1vw, 1.6rem); ;
     padding-top: 1em;
     line-height: 1.8em;
@@ -28,11 +26,19 @@ li{
 }
 
 h1{
-    font-size: clamp(2.2rem, 5vw, 5.2rem); ;
+    font-size: clamp(3.2rem, 5.4vw, 5.4rem); ;
 
 }
 
+video{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 
+}
 
 a{
     color: var(--dark);
@@ -50,21 +56,16 @@ a{
     width: 100%;
 }
 
-video{
-    position: absolute;
-    margin: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
+
 body{
-    background-image:url('assets/Video-Background.mp4');
+
+    background-color: var(--light);
     color: var(--dark);
+
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat';
+    font-family: 'Oswald';
     color: var(--dark);
     letter-spacing: 0.06em;
 }
@@ -132,10 +133,9 @@ justify-content: start;
         height: 100%;
 
     }
-
     .Logo{
-        
-        height: 5rem;
+        width:6rem;
+        height:100%;
     }
 }
 
@@ -145,14 +145,15 @@ body{
     margin: 0rem 3rem;
 }
 
+.Logo{
+    width:8rem;
+    height:100%;
+}
+
 .material-icons.sizes {
     display: none;
     }
 
-
-.Logo{
-    height: 4rem;
-}
 
 .menu{
     display: none;
@@ -186,10 +187,10 @@ header{
 @media (min-width: 1024px)  {
     
 
-.Logo{
-        height: 7rem;
-        width:  7rem;
-}
+    .Logo{
+        width:7rem;
+        height:100%;
+    }
 
 body{
     margin: 0rem 7rem;
