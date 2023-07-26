@@ -116,6 +116,7 @@ justify-content: start;
     }
 
     header{
+        background-color: aquamarine;
         position: sticky;
         display: grid;
         grid-template-columns: 35% 2fr;
