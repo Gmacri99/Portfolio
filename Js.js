@@ -56,6 +56,12 @@ match.add("(min-width:768px)", ()=>{
         duration: 1.2
     })
 
+    tl.from('.card-project',{
+        width:0,
+        height:0,
+        duration:2
+    })
+
 })
 
 match.add("(max-width:767px)", ()=>{
